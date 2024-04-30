@@ -1,0 +1,13 @@
+package-lock.json
+
+# Ignore compiled files
+*.exe
+*.o
+*.dll
+
+# Ignore log files
+*.log
+
+# Ignore directories
+node_modules/
+build/
