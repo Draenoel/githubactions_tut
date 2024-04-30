@@ -17,7 +17,7 @@ This project relies on the `upper-case` module to convert text to uppercase. Bef
 
 ```bash
 npm install upper-case
-
+```
 
 ### Forking the Repository
 1. Fork this repository by clicking the 'Fork' button on the top right corner of this page.
