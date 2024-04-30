@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #9e0505;
+            border-radius: 0 0 15px 15px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #8be9fd;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #50fa7b;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .animate-bg {
+            animation: bg-animation 5s infinite alternate;
+        }
+        @keyframes bg-animation {
+            from { background-color: #a50101; }
+            to { background-color: #913b54; }
+        }
+        
+        /* New CSS for copyright section */
+        .copyright-container {
+            text-align: center;
+            background-color: black; /* Black background */
+            padding: 20px;
+            border-radius: 15px; /* Rounded corners */
+            margin-top: 20px;
+        }
+        
+        .copyright {
+            border: 2px solid red; /* Red border */
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners */
+        }
+        
+        .copyright p {
+            margin: 0;
+            color: white; /* White text */
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="animate-bg">
+        <h1>Welcome to My Tutorial Site</h1>
+    </header>
+    <div class="container">
+        <main>
+            <p>Hello, and thank you for visiting! This is a modern example of a webpage that is engaging and interactive.</p>
+            <button onclick="displayMessage()">Click Me!</button>
+            <p id="messageArea"></p>
+        </main>
+    </div>
+    <!-- Updated copyright section -->
+    <footer>
+    <div class="copyright-container">
+        <div class="copyright">
+            <p>&copy; 2024 by <a href="#" style="color: #f1fa8c;">Draenoel</a>. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <!-- End of updated copyright section -->
+    <script>
+        function displayMessage() {
+            document.getElementById('messageArea').innerText = 'Thanks for clicking! Enjoy exploring the modern web!';
+        }
+    </script>
+</body>
+</html>
